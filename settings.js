@@ -1,6 +1,6 @@
 const settings = {
   packname: 'Cohenz Pro Bot',
-  author: '‎',
+  author: 'Marvin Musaasiz‎',
   botName: "Cohenz Pro Bot",
   botOwner: 'Musaasizi Marvin', // Your name
   ownerNumber: '256709913725', //Set your number here without + symbol, just add country code & number without any space
