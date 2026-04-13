@@ -1,30 +1,25 @@
-require('dotenv').config();
+const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
-global.APIs = {
-    xteam: 'https://api.xteam.xyz',
-    dzx: 'https://api.dhamzxploit.my.id',
-    lol: 'https://api.lolhuman.xyz',
-    violetics: 'https://violetics.pw',
-    neoxr: 'https://api.neoxr.my.id',
-    zenzapis: 'https://zenzapis.xyz',
-    akuari: 'https://api.akuari.my.id',
-    akuari2: 'https://apimu.my.id',
-    nrtm: 'https://fg-nrtm.ddns.net',
-    bg: 'http://bochil.ddns.net',
-    fgmods: 'https://api-fgmods.ddns.net'
-};
+// --- 1. THE OWNER IDENTITY ---
+global.ownername = "Musaasizi Marvin";
+global.botname = "Cohenz Pro Bot";
+global.author = "COHENZ PRO";
+global.packname = "Cohenz Pro";
+global.sudo = ["256709913725"];
+global.prefix = ".";
 
-global.APIKeys = {
-    'https://api.xteam.xyz': 'd90a9e986e18778b',
-    'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
-    'https://api.neoxr.my.id': 'yourkey',
-    'https://violetics.pw': 'beta',
-    'https://zenzapis.xyz': 'yourkey',
-    'https://api-fgmods.ddns.net': 'fg-dylux'
-};
+// --- 2. THE IMAGE LINK (Paste your Direct Link here) ---
+global.menu_img = "https://i.postimg.cc/W1jfCXRv/IMG-20260413-WA0015.jpg"; 
+global.thumb = "https://i.postimg.cc/W1jfCXRv/IMG-20260413-WA0015.jpg";
+global.allimg = "https://i.postimg.cc/W1jfCXRv/IMG-20260413-WA0015.jpg";
 
-module.exports = {
-    WARN_COUNT: 3,
-    APIs: global.APIs,
-    APIKeys: global.APIKeys
-};
+// --- 3. SYSTEM & AI ---
+global.lang = "EN"; // No more foreign languages
+global.gemini_api_key = process.env.GEMINI_API_KEY;
+global.gemini_model = "gemini-1.5-flash"; 
+
+// --- 4. SOCIALS ---
+global.link = 'https://youtube.com/@cohenzpro'; 
+global.channel = 'https://youtube.com/@cohenzpro'; 
+global.footer = "© 2026 iMac Recordz";
