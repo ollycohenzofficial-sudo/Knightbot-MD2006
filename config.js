@@ -1,3 +1,4 @@
+require('dotenv').config();
 global.ownername = "Musaasizi Marvin";
 global.botname = "Cohenz Pro Bot";
 global.sudo = ["256709913725"];
@@ -6,7 +7,6 @@ global.author = "iMac Recordz";
 global.prefix = ".";
 global.gemini_api_key = process.env.GEMINI_API_KEY;
 global.gemini_model = "gemini-1.5-flash"; 
-require('dotenv').config();
 
 global.APIs = {
     xteam: 'https://api.xteam.xyz',
